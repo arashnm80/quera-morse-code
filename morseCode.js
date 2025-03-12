@@ -13,4 +13,4 @@ class MorseCode {
 }
 
 const morseCodeLogic = new MorseCode();
-morseCodeLogic.fetchMorseCodeMap();
+
