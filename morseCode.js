@@ -6,6 +6,7 @@ class MorseCode {
         throw new Error('Failed to fetch Morse code map');
       }
       this.morseMap = await response.json();
+      console.log(this.morseMap)
     } catch (error) {
       console.error('Error loading Morse code map:', error);
     }
@@ -13,4 +14,4 @@ class MorseCode {
 }
 
 const morseCodeLogic = new MorseCode();
-
+morseCodeLogic.fetchMorseCodeMap();
